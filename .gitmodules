@@ -1,0 +1,6 @@
+[submodule "provision/roles/geerlingguy.jenkins"]
+	path = provision/roles/geerlingguy.jenkins
+	url = https://github.com/geerlingguy/ansible-role-jenkins
+[submodule "provision/roles/geerlingguy.java"]
+	path = provision/roles/geerlingguy.java
+	url = https://github.com/geerlingguy/ansible-role-java

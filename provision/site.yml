@@ -1,0 +1,36 @@
+---
+- name: Setup Jenkins
+  hosts: all
+
+  vars:
+    jenkins_plugins:
+       - git
+       - sonar
+       - ssh
+       - greenballs
+       - job-dsl
+       - publish-over-ftp
+       - gravatar
+       - build-flow-plugin
+       - bitbucket
+       - buildgraph-view
+       - chucknorris
+       - locale
+       - ws-cleanup
+       - rebuild
+       - pollscm
+       - jobConfigHistory
+       - buildtriggerbadge
+       - parameterized-trigger
+       - build-pipeline-plugin
+       - delivery-pipeline-plugin
+       - build-environment     
+       - reverse-proxy-auth-plugin
+       - extra-columns
+       - progress-bar-column-plugin
+       - ansicolor
+       - violations
+       - promoted-builds
+
+  roles:
+  - { role: geerlingguy.jenkins }
